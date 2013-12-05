@@ -28,3 +28,10 @@
 Shadowhunt Annotations
 
 	The Shadowhunt Annotations project provides a various Annotations.
+
+	With Version 2.0 of the <<<findbugs annotations>>> various annotations
+	(e.g. <<<edu.umd.cs.findbugs.annotations.DefaultAnnotationForMethods>>>) have
+	been deprecated, without an alternative in <<<javax.annotations>>>.
+
+	This project contains a replacement, at least for the
+	<<<DefaultAnnotationForMethods>>> is <<<NotNull>>> usecase.

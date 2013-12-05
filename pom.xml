@@ -9,7 +9,7 @@
 
 	<!-- project information {{{1 -->
 	<name>Shadowhunt Annotations</name>
-	<description>Collection of annotations</description>
+	<description>Collection of various annotations</description>
 	<url>http://dev.shadowhunt.de/annotations</url>
 	<inceptionYear>2013</inceptionYear>
 
@@ -60,8 +60,8 @@
 			<url>http://maven.shadowhunt.de/local-snapshot</url>
 		</snapshotRepository>
 		<site>
-			<id>www.shadowhunt.de</id>
-			<url>scp://www.yourcompany.com/www/docs/project/</url>
+			<id>shadowhunt.site</id>
+			<url>scp://dev.shadowhunt.de/sites/annotations</url>
 		</site>
 	</distributionManagement>
 	<!-- }}}1 -->
@@ -268,6 +268,17 @@
 				<configuration>
 					<tagNameFormat>v@{project.version}</tagNameFormat>
 				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-site-plugin</artifactId>
+				<dependencies>
+					<dependency>
+						<groupId>org.apache.maven.wagon</groupId>
+						<artifactId>wagon-ssh</artifactId>
+						<version>2.5</version>
+					</dependency>
+				</dependencies>
 			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>

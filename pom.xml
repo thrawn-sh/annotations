@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>de.shadowhunt</groupId>
-	<version>1.0.1-SNAPSHOT</version>
+	<version>1.0.0</version>
 	<artifactId>annotations</artifactId>
 	<packaging>jar</packaging>
 
@@ -78,6 +78,11 @@
 		<pluginManagement><!-- {{{1 -->
 			<!-- keep list ordered by groupId and artifactId -->
 			<plugins>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-assembly-plugin</artifactId>
+					<version>2.4</version>
+				</plugin>
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-clean-plugin</artifactId>
@@ -350,6 +355,7 @@
 			<groupId>com.google.code.findbugs</groupId>
 			<artifactId>annotations</artifactId>
 			<version>2.0.2</version>
+			<scope>compile</scope>
 		</dependency>
 	</dependencies>
 	<!-- }}}1 -->

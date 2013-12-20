@@ -208,6 +208,7 @@
 				<artifactId>maven-gpg-plugin</artifactId>
 				<configuration>
 					<keyname>77103E0B</keyname><!-- shadowhunt package -->
+					<useAgent>true</useAgent>
 				</configuration>
 				<executions>
 					<execution>

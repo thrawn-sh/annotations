@@ -39,6 +39,7 @@
 
 		<menu name="Overview">
 			<item name="Introduction" href="index.html"/>
+			<item name="Download" href="download.html"/>
 		</menu>
 
 		<menu ref="reports"/>

@@ -1,4 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+    Copyright (C) 2013 shadowhunt (dev@shadowhunt.de)
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+            http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+
+-->
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
@@ -78,6 +95,11 @@
 		<pluginManagement><!-- {{{1 -->
 			<!-- keep list ordered by groupId and artifactId -->
 			<plugins>
+				<plugin>
+					<groupId>com.mycila</groupId>
+					<artifactId>license-maven-plugin</artifactId>
+					<version>2.5</version>
+				</plugin>
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-assembly-plugin</artifactId>
@@ -172,11 +194,6 @@
 					<groupId>org.codehaus.mojo</groupId>
 					<artifactId>buildnumber-maven-plugin</artifactId>
 					<version>1.2</version>
-				</plugin>
-				<plugin>
-					<groupId>org.codehaus.mojo</groupId>
-					<artifactId>license-maven-plugin</artifactId>
-					<version>1.5</version>
 				</plugin>
 				<plugin>
 					<groupId>org.codehaus.mojo</groupId>
@@ -329,22 +346,22 @@
 				</executions>
 			</plugin>
 			<plugin>
-				<groupId>org.codehaus.mojo</groupId>
+				<groupId>com.mycila</groupId>
 				<artifactId>license-maven-plugin</artifactId>
 				<configuration>
-					<verbose>false</verbose>
+					<header>com/mycila/maven/plugin/license/templates/APACHE-2.txt</header>
+					<properties>
+						<owner>${project.organization.name}</owner>
+						<year>${project.inceptionYear}</year>
+						<email>dev@shadowhunt.de</email>
+					</properties>
 				</configuration>
 				<executions>
 					<execution>
-						<id>add-licence</id>
 						<phase>process-sources</phase>
 						<goals>
-							<goal>update-file-header</goal>
+							<goal>format</goal>
 						</goals>
-						<configuration>
-							<addJavaLicenseAfterPackage>false</addJavaLicenseAfterPackage>
-							<licenseName>apache_v2</licenseName>
-						</configuration>
 					</execution>
 				</executions>
 			</plugin>

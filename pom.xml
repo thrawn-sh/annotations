@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!--
+<?xml version="1.0" encoding="UTF-8"?><!--
 
     Copyright (C) 2013 shadowhunt (dev@shadowhunt.de)
 
@@ -87,7 +86,6 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     </properties>
-
 
     <build>
         <defaultGoal>install</defaultGoal>
@@ -201,7 +199,8 @@
                     <version>2.1</version>
                 </plugin>
             </plugins>
-        </pluginManagement><!-- }}}1 -->
+        </pluginManagement>
+        <!-- }}}1 -->
         <plugins><!-- {{{1 -->
             <!-- keep list ordered by groupId and artifactId -->
             <plugin>
@@ -229,7 +228,8 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-gpg-plugin</artifactId>
                 <configuration>
-                    <keyname>77103E0B</keyname><!-- shadowhunt package -->
+                    <!-- shadowhunt package -->
+                    <keyname>77103E0B</keyname>
                     <useAgent>true</useAgent>
                 </configuration>
                 <executions>
@@ -317,7 +317,6 @@
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>animal-sniffer-maven-plugin</artifactId>
                 <configuration>
-                    <ignoreDependencies>false</ignoreDependencies>
                     <signature>
                         <groupId>org.codehaus.mojo.signature</groupId>
                         <artifactId>java15</artifactId>
@@ -365,7 +364,8 @@
                     </execution>
                 </executions>
             </plugin>
-        </plugins><!-- }}}1 -->
+        </plugins>
+        <!-- }}}1 -->
     </build>
     <reporting>
         <plugins><!-- {{{1 -->
@@ -389,7 +389,8 @@
                     </reportSet>
                 </reportSets>
             </plugin>
-        </plugins><!-- }}}1 -->
+        </plugins>
+        <!-- }}}1 -->
     </reporting>
 
     <!-- dependencies {{{1 -->

@@ -25,5 +25,5 @@
 Download
 
 	Version ${project.version} of ${project.name} can be found at
-	{{{http://search.maven.org/#artifactdetails|${project.groupId}|${project.artifactId}|${project.version}}Maven
+	{{{http://search.maven.org/#artifactdetails|${project.groupId}|${project.artifactId}|${project.version}|jar}Maven
 	Central}}

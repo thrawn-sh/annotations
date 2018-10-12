@@ -262,6 +262,7 @@
                             <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
                         </manifest>
                         <manifestEntries>
+                            <Automatic-Module-Name>${project.groupId}.${project.artifactId}</Automatic-Module-Name>
                             <Built-By>dev@shadowhunt.de</Built-By>
                             <Implementation-Build>${build.version.full}</Implementation-Build>
                         </manifestEntries>

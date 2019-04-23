@@ -27,12 +27,12 @@
     <!-- project information {{{1 -->
     <name>Shadowhunt Annotations</name>
     <description>Collection of various annotations</description>
-    <url>https://dev.shadowhunt.de/annotations</url>
+    <url>https://gitlab.shadowhunt.de/annotations</url>
     <inceptionYear>2013</inceptionYear>
 
     <organization>
         <name>shadowhunt</name>
-        <url>https://dev.shadowhunt.de</url>
+        <url>https://gitlab.shadowhunt.de</url>
     </organization>
 
     <licenses>
@@ -47,7 +47,7 @@
         <developer>
             <id>thrawn</id>
             <name>Alexander Dreweke</name>
-            <email>thrawn@shadowhunt.de</email>
+            <email>alexander@dreweke.net</email>
             <timezone>Europe/Berlin</timezone>
         </developer>
     </developers>
@@ -55,10 +55,10 @@
 
     <!-- environment information {{{1 -->
     <scm>
-        <connection>scm:git:https://scm.shadowhunt.de/annotations.git</connection>
-        <developerConnection>scm:git:https://scm.shadowhunt.de/annotations.git</developerConnection>
+        <connection>scm:git:https://gitlab.shadowhunt.de/open-source/annotations.git</connection>
+        <developerConnection>scm:git:https://gitlab.shadowhunt.de/open-source/annotations.git</developerConnection>
         <tag>HEAD</tag>
-        <url>https://github.com/thrawn-sh/annotations</url>
+        <url>https://gitlab.shadowhunt.de/open-source/annotations</url>
     </scm>
 
     <distributionManagement>
@@ -67,11 +67,6 @@
             <name>Sonatype (Maven Central) Staging Repository</name>
             <url>https://oss.sonatype.org/service/local/staging/deploy/maven2</url>
         </repository>
-        <snapshotRepository>
-            <id>shadowhunt</id>
-            <name>Shadowhunt Local Snapshot Repository</name>
-            <url>https://maven.shadowhunt.de/local-snapshot</url>
-        </snapshotRepository>
     </distributionManagement>
     <!-- }}}1 -->
 
